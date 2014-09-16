@@ -1,0 +1,9 @@
+<h1>Home#index</h1>
+<p>Welcome <%- current_user.name %></p>
+
+<p>Your cities are</p>
+<ul>
+<%- for city in current_user.cities %>
+	<li><%= city %></li>
+<%- end %>
+</ul>
